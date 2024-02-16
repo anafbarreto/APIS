@@ -1,0 +1,28 @@
+HTTP: HyperText Transfer Protocol
+Projetado para enviar conteudo pela internet.
+
+Cliente >> proxy >> proxy >> server
+Cliente << proxy << proxy << server
+
+
+HTTPS: HyperText Transfer Protocol Security 
+Como o nome sugere, é versão mais segura ou até uma extensão do HTTP. 
+No HTTPS, o navegador e o servidor estabelecem uma conexão segura e criptografada antes de transferir dados.
+Certificado SSL
+
+
+---- Metodos ----
+GET: Consulta um registro ou uma coleção de registros do servidor.
+POST: Envia dados para criar um novo registro no servidor.
+PUT: Envia dados para atualizar um registro existente no servidor.
+DELETE: Excluir registros do servidor
+PATCH: Envia dados para atualizar parcialmente um registro existente no servidor.
+-----------------
+
+Elementos dentro da comunicação do protocolo, independente do metodo.
+Connect: usado para abrir uma conexão com o ser remoto.
+Options: usado para descrever os detalhes/criteios de comunicação.
+Trace: desenvolvido para um monitoramento/diagnostico da API.
+Head: recupera os cabeçalhos(informações como sistema operacional e os codigos de retorno HTTP).
+
+Status code: https://http.cat/ 

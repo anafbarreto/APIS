@@ -1,0 +1,11 @@
+API: Application Programming Interface
+São interfaces que permitem a comunicação/integração entre aplicações de software.
+
+Modelos mais utilizados: REST e SOAP.
+SOAP sobrecarga extra, mais largura de banda necessaria, mais trabalhosa para quem envia e quem recebe - extremidades (endpoint).
+REST  mais leve, pode ser armazenado em cache e mais facil de atualizar, dados essenciais.
+
+CRUD (create - read - update - delete)
+ligada aos metodos HTTP (POST - GET - PUT - DELETE)
+
+REST API
