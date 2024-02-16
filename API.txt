@@ -8,4 +8,10 @@ REST  mais leve, pode ser armazenado em cache e mais facil de atualizar, dados e
 CRUD (create - read - update - delete)
 ligada aos metodos HTTP (POST - GET - PUT - DELETE)
 
-REST API
+REST API (Representational State Transfer)
+https://json-schema.org/
+
+endpoint: localização digital, cada endpoint é uma URL de um recurso no servidor.
+headers: cabeçalho de informações
+body: informações adicionais e resposta
+response: xml ou json 

@@ -1,0 +1,16 @@
+Flask: Framework que utiliza a linguagem python para criar apps web.
+
+Criando o ambiente
+terminal: py -3 -m venv .nome_da_pasta
+
+Ativar o ambiente virtual
+terminal: .nome_da_pasta\scripts\activate (pode usar tab pra completar o caminho)
+Se rolar erro de bloqueio de excecução: Set-ExecutionPolicy -ExecutionPolicy Undefined -Scope CurrentUser
+
+Instalar o Flask
+terminal: pip install flask
+Se rolar erro: pip install --trusted-host pypi.org --trusted-host files.pythonhosted.org Flask -vvv
+Com o ambiente virtual ativo
+
+Consultar uma api criada
+flask --app app run
