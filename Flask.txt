@@ -10,7 +10,7 @@ Se rolar erro de bloqueio de excecução: Set-ExecutionPolicy -ExecutionPolicy U
 Instalar o Flask
 terminal: pip install flask
 Se rolar erro: pip install --trusted-host pypi.org --trusted-host files.pythonhosted.org Flask -vvv
-Com o ambiente virtual ativo
+** Com o ambiente virtual ativo
 
-Consultar uma api criada
-flask --app app run
+Consultar a api criada
+terminal: flask --app app run

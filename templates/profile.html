@@ -10,15 +10,14 @@
 
   <div class="col-sm-3 col-2">
     <h3 class="h5">{{profile.name}}</h3>
-    <p>Espécie: "{{profile.species}}"</p>
-    <p>Gênero: "{{profile.gender}}"</p>
+    <p>Status: {{ profile.status }}</p>
+    <p>Espécie: {{profile.species}}</p>
+    <p>Gênero: {{profile.gender}}</p>
     <a href="/location/{{location_id}}" class="link-dark">
-      origem: "{{profile.origin.name}}"</a
-    >
-    <br />
-    <a href="/location/{{location_id}}" class="link-dark"
-      >Localização:"{{profile.location.name}}"</a
-    >
+      Origem: {{profile.origin.name}}</a>
+    <br><br>
+    <a href="/location/{{location_id}}" class="link-dark">
+      Localização: {{profile.location.name}} </a>
     <br><br>
     <div class="container_lista_episodios">
       <p>Episodios que {{profile.name}} aparece:</p>

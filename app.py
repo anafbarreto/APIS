@@ -22,8 +22,8 @@ def get_profile(id):
     data = response.read()
     dict = json.loads(data)
     
-    """Para cada url transforma em array e paga o ultimo elemento depois da barra "episode":["https://rickandmortyapi.com/api/episode/1"...]
-logo pega id do episodio e adiciona lista episodios"""
+    """Para cada url transforma em array e pega o ultimo elemento depois da barra "episode":["https://rickandmortyapi.com/api/episode/1"...]
+assim, pega id do episodio e adiciona na lista episodios"""
     list_episodes_ids = [] 
     for episode in dict['episode']:
         episode_id = episode.split("/")[-1]

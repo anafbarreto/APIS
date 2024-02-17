@@ -35,7 +35,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\ana_barreto\Desktop\Desenvolvimento\WoMakersCode\APIS\.venv"
+VIRTUAL_ENV="C:\Users\ana_barreto\Desktop\Desenvolvimento\WoMakersCode\Flask_API\.venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
