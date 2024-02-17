@@ -1,0 +1,47 @@
+{% extends "layout.html"%} {% block content %}
+<div class="row">
+  <div class="col-sm-3 col-2">
+    <img
+      src="{{profile.image}}"
+      alt="{{profile.name}}"
+      class="img-fluid img-thumbnail"
+    />
+  </div>
+
+  <div class="col-sm-3 col-2">
+    <h3 class="h5">{{profile.name}}</h3>
+    <p>Espécie: "{{profile.species}}"</p>
+    <p>Gênero: "{{profile.gender}}"</p>
+    <a href="/location/{{location_id}}" class="link-dark">
+      origem: "{{profile.origin.name}}"</a
+    >
+    <br />
+    <a href="/location/{{location_id}}" class="link-dark"
+      >Localização:"{{profile.location.name}}"</a
+    >
+    <br><br>
+    <div class="container_lista_episodios">
+      <p>Episodios que {{profile.name}} aparece:</p>
+      {% if error_message %}
+      <div class="container_Erro">
+        <img
+          src="../static/erro.png"
+          width="50px"
+          height="50px"
+          alt="imagem de um x"
+        />
+        <p>{{ error_message }}</p>
+      </div>
+      {% else %}
+      <ul>
+        {% for episode in episodes_found %}
+        <a href="/episode/{{episode.id}}" class="link-dark">
+          <li>{{ episode.name }} - {{ episode.episode }}</li>
+        </a>
+        {% endfor %}
+      </ul>
+      {%endif%}
+    </div>
+  </div>
+</div>
+{% endblock %}
