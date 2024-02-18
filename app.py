@@ -39,7 +39,7 @@ assim, pega id do episodio e adiciona na lista episodios"""
     url = "https://rickandmortyapi.com/api/episode"
     response = urllib.request.urlopen(url) 
     data = response.read()
-    episodes_dict = json.loads(data); 
+    episodes_dict = json.loads(data) 
     
     episodes_found = []
     
