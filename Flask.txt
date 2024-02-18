@@ -4,7 +4,7 @@ Criando o ambiente
 terminal: py -3 -m venv .nome_da_pasta
 
 Ativar o ambiente virtual
-terminal: .nome_da_pasta\scripts\activate (pode usar tab pra completar o caminho)
+terminal: .nome_da_pasta (pode usar tab pra completar o caminho)
 Se rolar erro de bloqueio de excecução: Set-ExecutionPolicy -ExecutionPolicy Undefined -Scope CurrentUser
 
 Instalar o Flask

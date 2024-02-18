@@ -3,11 +3,11 @@
   <thead class="thead-dark">
     <tr>
       <th scope="col">ID</th>
-      <th scope="col">Nome do Episodio</th>
-      <th scope="col">Data de Lançamento</th>
+      <th scope="col">Nome do episodio</th>
+      <th scope="col">Data de lançamento</th>
       <th scope="col">Código</th>
-      <th scope="col">Lista de Personagens</th>
-      <th scope="col">Perfil do Personagem</th>
+      <th scope="col">Lista de personagens</th>
+      <th scope="col">Ver perfil</th>
     </tr>
   </thead>
   <tbody>
@@ -27,7 +27,7 @@
         <ul class="links">
           {% for character_id in list_ids_characters %}
           <li>
-            <a href="/profile/{{character_id}}">Ver Perfil do personagem</a>
+            <a href="/profile/{{character_id}}">Ver perfil do personagem</a>
           </li>
           {% endfor %}
         </ul>
